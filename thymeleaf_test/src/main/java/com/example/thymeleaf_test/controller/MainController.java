@@ -48,4 +48,10 @@ public class MainController {
         return "listMember";
     }
 
+    @RequestMapping("/article")
+    public String articleList(Model model){
+        model.addAttribute("name","Rooney");
+
+        return "article";
+    }
 }
